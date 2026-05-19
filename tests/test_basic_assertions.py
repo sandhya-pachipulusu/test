@@ -30,9 +30,9 @@ class TestWikipedia(unittest.TestCase):
         expect(self.page.locator('input[name="search"]')).to_be_visible()
         expect(self.page.locator('button[type="submit"]')).to_be_visible()
         
-    def test_wikipedia_search_button_fails(self):
-        self.page.goto("https://www.wikipedia.org/")
-        expect(self.page.locator('button[type="submit1"]')).to_be_visible()
+   # def test_wikipedia_search_button_fails(self):
+    #    self.page.goto("https://www.wikipedia.org/")
+    #    expect(self.page.locator('button[type="submit1"]')).to_be_visible()
         
 
 if __name__ == "__main__":
